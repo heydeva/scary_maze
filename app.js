@@ -1,4 +1,4 @@
-const mazeBorder = document.querySelector(".maze-border");
+const mazeBorders = document.querySelector(".maze-border");
 const nextBtn = document.querySelector(".next-btn");
 
 // assets
@@ -33,7 +33,7 @@ window.addEventListener("mousemove", (e)=>{
 
 nextBtn.addEventListener("click", ()=>{
     levelOne.style.display = "none";
-    levelTwo.style.display = "block";
+    levelTwo.style.display = "inline-block";
     nextBtn.style.opacity = 0;
     nextBtn.style.pointerEvents = "none";
 })

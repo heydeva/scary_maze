@@ -19,8 +19,8 @@ let CheckCollision=(check)=>{
         levelOne.style.pointerEvents = "none";
     }
     if(check === "end-game"){
-        ghost.style.display = "block";
         scream.play();
+        ghost.style.display = "block";
         body.style.backgroundColor = "black";
     }
 }
@@ -37,3 +37,4 @@ nextBtn.addEventListener("click", ()=>{
     nextBtn.style.opacity = 0;
     nextBtn.style.pointerEvents = "none";
 })
+
